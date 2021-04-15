@@ -1,0 +1,58 @@
+body, p, h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("/img/photos/Food.jpg");
+    height: 100vh;
+}
+nav {
+    text-align: end;
+}
+a {
+    text-decoration: none;
+}
+
+#strip {
+    background-color: #6C0D1A;
+    color: #F9E5D2;
+    text-align: center;
+}
+#textHeader {
+    color: #F9E5D2;
+    text-align: center;
+}
+#postcard{
+    background-color: #F9E5D2;
+}
+#imgPostcard{
+    border: 1px solid;
+    padding: 10px;
+    background-color: #fff;
+}
+#structure{
+    border: 1px solid #000;
+}
+#col1 {
+    color: #6C0D1A;
+}
+#parallax {
+    background-image: url("/img/photos/Scenery.jpg");
+    height: 100vh;
+}
+#frame {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 35%;
+}
+#containerFooter {
+    background-color: #F9E5D2;
+    color: #6C0D1A;
+}
+#contact, #copyright {
+    text-align: center;
+    vertical-align: middle;
+}
+#schedule {
+    vertical-align: middle;
+}
