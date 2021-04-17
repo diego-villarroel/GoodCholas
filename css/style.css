@@ -9,10 +9,18 @@ header {
 }
 nav {
     text-align: end;
+    width: 60%;
+    float: right;
+    margin: 12vh 10vw 0 0;
 }
 a {
     text-decoration: none;
     color: #F9E5D2;
+    transition: all 1s ease;
+}
+a:hover {
+    color: #6C0D1A;
+    transition: all 1s ease;
 }
 li {
     display: inline;
@@ -43,7 +51,7 @@ li {
     list-style-type: none;
 }
 #logo {
-    margin: 2vh 0 0 10vw;
+    margin: 10vh 0 0 10vw;
 }
 #textHeader {
     color: #F9E5D2;
@@ -68,70 +76,121 @@ li {
     width: 170px;
 }
 
-#postcard{
+#postcard {
     background-color: #F9E5D2;
     height: 110vh;
 }
-#imgPostcard{
+#imgPostcard {
     padding: 22px 17px;
     background-color: #fff;
     height: 80vh;
     margin-top: 10vh;
     margin-left: 12vw;
     position: relative;
+    animation-name: imgPostcard;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
-#textPostcard{
+@keyframes imgPostcard {
+    from {margin-top: 20vh}
+    to {margin-top: 10vh}
+}
+#textPostcard {
     width: 35vw;
     position: absolute;
     margin: -70vh 0 0 30vw;
     z-index: 20;
+    animation-name: textPostcard;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
 }
-#structure{
+@keyframes textPostcard {
+    from {margin: -70vh 0 0 34vw;}
+    to {margin: -70vh 0 0 30vw;}
+}
+#structure {
     background-color: #F9E5D2;
     border: 1px solid #000;
     color: #6C0D1A;
     padding-bottom: 40px;
+    
 }
-#row1Postcard{
+#row1Postcard {
     display: flex;
     margin: 10px auto 15px auto;
 }
-#row2Postcard{
+#row2Postcard {
     display: flex;
 }
-#col1Postcard{
+#col1Postcard {
     width: 40%;
     padding-left: 35px;
+    font-size: 13px;
 }
 #verticalLine2 {
     border-left: thin solid #6C0D1A;
     margin-left: 1vw;
     margin-right: 1vw;
 }
-#col2Postcard{
+#col2Postcard {
     align-self: center;
-    padding-left: 30px;
+    padding-left: 1vw;
+    font-size: 42px;
     color: #6C0D1A !important;
 }
 
 #parallax {
+    display: flex;
     background-image: url("/img/photos/Scenery.jpg");
-    height: 100vh;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+#stores {
+    width: 65%;
+    margin: 28vh auto 0 auto;
+    padding: 0 0 0 25vw;
 }
 #frame {
-    display: flex;
-    margin: 0 auto 0 auto;
-    width: 35%;
+    width: 65%;
+}
+#textStores {
+    margin: -38vh 25vw 0 0;
+    text-align: center;
+    color: #6C0D1A;
+    line-height: 35px;
+    font-size: 13 px;
+}
+#textStores>h3 {
+    font-size: 42px;
 }
 
 #containerFooter {
     background-color: #F9E5D2;
     color: #6C0D1A;
+    height: 40vh;
 }
 #contact, #copyright {
     text-align: center;
     vertical-align: middle;
 }
+#row1Footer {
+    padding: 8vh 0 12vh 0;
+}
 #schedule {
     vertical-align: middle;
+    width: 20%;
+    padding-left: 8vw;
+    font-size: 13px;   
+}
+#contact {
+    position: absolute;
+    margin: -10vh 0 0 35vw;
+    font-size: 36px;
+}
+#contact>h3 {
+    font-size: 40x;
 }
