@@ -4,38 +4,116 @@ body, p, h1, h2, h3, h4, ul {
 }
 header {
     background-image: url("/img/photos/Food.jpg");
-    height: 100vh;
+    background-size: cover;
+    height: 120vh;
 }
 nav {
     text-align: end;
 }
 a {
     text-decoration: none;
+    color: #F9E5D2;
+}
+li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 14px;
 }
 
 #strip {
     background-color: #6C0D1A;
+    background-size: auto;
     color: #F9E5D2;
     text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    height: 8vh;
+}
+#strip > p {
+    padding: 2.5vh;    
+}
+#verticalLine {
+    border-left: thin solid #F9E5D2;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#nav, ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+#logo {
+    margin: 2vh 0 0 10vw;
 }
 #textHeader {
     color: #F9E5D2;
     text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 49px;
+    margin: 35vh;
+    line-height: 90px;
 }
+#wow{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 110px;
+}
+#btnOrder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #BB6851;
+    height: 40px;
+    width: 170px;
+}
+
 #postcard{
     background-color: #F9E5D2;
+    height: 110vh;
 }
 #imgPostcard{
-    border: 1px solid;
-    padding: 10px;
+    padding: 22px 17px;
     background-color: #fff;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 12vw;
+    position: relative;
+}
+#textPostcard{
+    width: 35vw;
+    position: absolute;
+    margin: -70vh 0 0 30vw;
+    z-index: 20;
 }
 #structure{
+    background-color: #F9E5D2;
     border: 1px solid #000;
-}
-#col1 {
     color: #6C0D1A;
+    padding-bottom: 40px;
 }
+#row1Postcard{
+    display: flex;
+    margin: 10px auto 15px auto;
+}
+#row2Postcard{
+    display: flex;
+}
+#col1Postcard{
+    width: 40%;
+    padding-left: 35px;
+}
+#verticalLine2 {
+    border-left: thin solid #6C0D1A;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#col2Postcard{
+    align-self: center;
+    padding-left: 30px;
+    color: #6C0D1A !important;
+}
+
 #parallax {
     background-image: url("/img/photos/Scenery.jpg");
     height: 100vh;
@@ -45,6 +123,7 @@ a {
     margin: 0 auto 0 auto;
     width: 35%;
 }
+
 #containerFooter {
     background-color: #F9E5D2;
     color: #6C0D1A;
