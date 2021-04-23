@@ -1,8 +1,6 @@
-@font-face {
-    font-family: "EB Garamond";
-    src: url ("../font/EBGaramond-Italic-VariableFont_wght.ttf");
-    font-style: italic;
-  }
+/*  =============
+    GENERAL STYLE
+    ============= */
 body, p, h1, h2, h3, h4, ul {
     margin: 0;
     padding: 0;
@@ -10,13 +8,15 @@ body, p, h1, h2, h3, h4, ul {
 header {
     background-image: url("../img/photos/Food.jpg");
     background-size: cover;
-    height: 120vh;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 nav {
     text-align: end;
-    width: 60%;
+    width: 50%;
     float: right;
     margin: 12vh 10vw 0 0;
+    font-family: 'Open Sans', sans-serif;    
+    font-weight: 600;
 }
 a {
     text-decoration: none;
@@ -32,7 +32,15 @@ li {
     margin-right: 50px;
     font-size: 14px;
 }
+button {
+    border: none;
+    -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+}
 
+/*  =============
+    TOP STRIP 
+    ============= */
 #strip {
     background-color: #6C0D1A;
     background-size: auto;
@@ -40,6 +48,7 @@ li {
     text-align: center;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
     height: 8vh;
 }
 #strip > p {
@@ -51,21 +60,25 @@ li {
     margin-right: 1vw;
 }
 
+/*  =============
+    HEADER 
+    ============= */
 #nav, ul{
     text-decoration: none;
     list-style-type: none;
 }
 #logo {
     margin: 10vh 0 0 10vw;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 #textHeader {
     color: #F9E5D2;
     text-align: center;
     font-family: 'EB Garamond';
     font-style: italic;
-    font-size: 49px;
-    font-weight: 400;
-    margin: 35vh;
+    font-size: 49px; 
+    margin: 35vh 0 0 0;
     line-height: 90px;
 }
 #wow{
@@ -79,10 +92,21 @@ li {
     font-weight: 600;
     font-size: 15px;
     background-color: #BB6851;
+    color: #F9E5D2;
     height: 40px;
     width: 170px;
+    margin: 0 0 25vh 0;
+    transition: all 1s ease;
+}
+#btnOrder:hover {
+    color: #BB6851;
+    background-color: #F9E5D2;
+    transition: all 1s ease;
 }
 
+/*  =============
+    POSTCARD SECTION 
+    ============= */
 #postcard {
     background-color: #F9E5D2;
     height: 110vh;
@@ -110,6 +134,8 @@ li {
     animation-name: textPostcard;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    -webkit-filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
 }
 @keyframes textPostcard {
     from {margin: -70vh 0 0 34vw;}
@@ -119,8 +145,7 @@ li {
     background-color: #F9E5D2;
     border: 1px solid #000;
     color: #6C0D1A;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px;    
 }
 #row1Postcard {
     display: flex;
@@ -133,6 +158,8 @@ li {
     width: 40%;
     padding-left: 35px;
     font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
 #verticalLine2 {
     border-left: thin solid #6C0D1A;
@@ -142,10 +169,28 @@ li {
 #col2Postcard {
     align-self: center;
     padding-left: 1vw;
+    font-family: 'EB Garamond';
     font-size: 42px;
+    font-style: italic;
     color: #6C0D1A !important;
 }
 
+/*  =============
+    IG FEED SECTION 
+    ============= */
+#gridInsta {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 5vh;
+}
+#rowInsta {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/*  =============
+    STORE SECTION 
+    ============= */
 #parallax {
     display: flex;
     background-image: url("../img/photos/Scenery.jpg");
@@ -170,34 +215,54 @@ li {
     color: #6C0D1A;
     line-height: 35px;
     font-size: 13 px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
 #textStores>h3 {
     font-size: 42px;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    margin-bottom: 27px;
 }
 
+/*  =============
+    FOOTER 
+    ============= */
 #containerFooter {
     background-color: #F9E5D2;
     color: #6C0D1A;
-    height: 40vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.gridFooter {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
 }
 #contact, #copyright {
     text-align: center;
     vertical-align: middle;
 }
 #row1Footer {
-    padding: 8vh 0 12vh 0;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin: 8vh 0 8vh 0;
 }
 #schedule {
     vertical-align: middle;
-    width: 20%;
-    padding-left: 8vw;
-    font-size: 13px;   
+    padding-left: 8vw; 
 }
 #contact {
-    position: absolute;
-    margin: -10vh 0 0 35vw;
     font-size: 36px;
+    font-weight: lighter;
 }
 #contact>h3 {
     font-size: 40x;
+    font-family: 'EB Garamond';
+    font-weight: 600;
+}
+#copyright {
+    letter-spacing: 3px;
+    margin: 0 5vw 1vh 5vw;
 }
