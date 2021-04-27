@@ -118,6 +118,8 @@ button {
     margin-top: 10vh;
     margin-left: 12vw;
     position: relative;
+}
+.animationImgPostcard {    
     animation-name: imgPostcard;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -131,11 +133,13 @@ button {
     position: absolute;
     margin: -70vh 0 0 30vw;
     z-index: 20;
+    -webkit-filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
+}
+.animationTextPostcard {    
     animation-name: textPostcard;
     animation-duration: 2s;
     animation-timing-function: ease-out;
-    -webkit-filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
 }
 @keyframes textPostcard {
     from {margin: -70vh 0 0 34vw;}
@@ -181,11 +185,27 @@ button {
 #gridInsta {
     display: grid;
     grid-template-rows: auto auto;
-    margin: 5vh;
+    grid-row-gap: 3vh;
+    margin: 30vh 10vw;
 }
 #rowInsta {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2vw;
+}
+#instaCol {
+    overflow: hidden;
+    width: 18vw;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+}
+#instaPhoto {
+    width: 100%;
+    transition: transform .3s ease;
+}
+#instaPhoto:hover {
+    transform: scale(1.1);
 }
 
 /*  =============
