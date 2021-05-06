@@ -1,6 +1,7 @@
 /*  =============================================
                     GENERAL STYLE
     ============================================= */
+<<<<<<< HEAD
     body, p, h1, h2, h3, h4, ul {
         margin: 0;
         padding: 0;
@@ -331,3 +332,294 @@
         letter-spacing: 3px;
         margin: 0 5vw 1vh 5vw;
     }
+=======
+body, p, h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url("../img/photos/Food.jpg");
+    background-size: cover;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+nav {
+    text-align: end;
+    width: 50%;
+    float: right;
+    margin: 12vh 10vw 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: #F9E5D2;
+    transition: all 1s ease;
+}
+a:hover {
+    color: #6C0D1A;
+    transition: all 1s ease;
+}
+li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 14px;
+}
+button {
+    border: none;
+    -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+}
+
+/*  =============================================
+                    TOP STRIP
+    ============================================= */
+#strip {
+    background-color: #6C0D1A;
+    background-size: auto;
+    color: #F9E5D2;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    height: 8vh;
+}
+#strip > p {
+    padding: 2.5vh;
+}
+#verticalLine {
+    border-left: thin solid #F9E5D2;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+/*  =============================================
+                    HEADER
+    ============================================= */
+#nav, ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+#logo {
+    margin: 10vh 0 0 10vw;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+#textHeader {
+    color: #F9E5D2;
+    text-align: center;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-size: 49px;
+    margin: 35vh 0 0 0;
+    line-height: 90px;
+}
+#wow{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 110px;
+}
+#btnOrder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #BB6851;
+    color: #F9E5D2;
+    height: 40px;
+    width: 170px;
+    margin: 0 0 25vh 0;
+    transition: all 1s ease;
+}
+#btnOrder:hover {
+    color: #BB6851;
+    background-color: #F9E5D2;
+    transition: all 1s ease;
+}
+
+/*  =============================================
+                    POSTCARD SECTION
+    ============================================= */
+#postcard {
+    background-color: #F9E5D2;
+    height: 110vh;
+}
+#imgPostcard {
+    padding: 22px 17px;
+    background-color: #fff;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 12vw;
+    position: relative;
+}
+.animationImgPostcard {
+    animation-name: imgPostcard;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes imgPostcard {
+    from {margin-top: 20vh}
+    to {margin-top: 10vh}
+}
+#textPostcard {
+    width: 35vw;
+    position: absolute;
+    margin: -70vh 0 0 30vw;
+    z-index: 20;
+    -webkit-filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(5px 5px 35px rgba(0, 0, 0, 0.4));
+}
+.animationTextPostcard {
+    animation-name: textPostcard;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes textPostcard {
+    from {margin: -70vh 0 0 34vw;}
+    to {margin: -70vh 0 0 30vw;}
+}
+#structure {
+    background-color: #F9E5D2;
+    border: 1px solid #000;
+    color: #6C0D1A;
+    padding-bottom: 40px;
+}
+#row1Postcard {
+    display: flex;
+    margin: 10px auto 15px auto;
+}
+#row2Postcard {
+    display: flex;
+}
+#col1Postcard {
+    width: 40%;
+    padding-left: 35px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+#verticalLine2 {
+    border-left: thin solid #6C0D1A;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#col2Postcard {
+    align-self: center;
+    padding-left: 1vw;
+    font-family: 'EB Garamond';
+    font-size: 42px;
+    font-style: italic;
+    color: #6C0D1A !important;
+    transition: all .5s ease;
+}
+#col2Postcard:hover {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+/*  =============================================
+                    IG FEED SECTION
+    ============================================= */
+#gridInsta {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 3vh;
+    margin: 30vh 10vw;
+}
+#rowInsta {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2vw;
+}
+#instaCol {
+    overflow: hidden;
+    width: 18vw;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+}
+#instaPhoto {
+    width: 100%;
+    transition: transform .3s ease;
+}
+#instaPhoto:hover {
+    transform: scale(1.1);
+}
+
+/*  =============================================
+                    STORE SECTION
+    ============================================= */
+#parallax {
+    display: flex;
+    background-image: url("../img/photos/Scenery.jpg");
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+#stores {
+    width: 65%;
+    margin: 28vh auto 0 auto;
+    padding: 0 0 0 25vw;
+}
+#frame {
+    width: 65%;
+}
+#textStores {
+    margin: -38vh 25vw 0 0;
+    text-align: center;
+    color: #6C0D1A;
+    line-height: 35px;
+    font-size: 13 px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+#textStores>span {
+    font-size: 42px;
+    font-family: 'EB Garamond';
+    font-style: italic;
+    margin-bottom: 27px;
+}
+
+/*  =============================================
+                    FOOTER
+    ============================================= */
+#containerFooter {
+    background-color: #F9E5D2;
+    color: #6C0D1A;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.gridFooter {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+#contact, #copyright {
+    text-align: center;
+    vertical-align: middle;
+}
+#row1Footer {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin: 8vh 0 8vh 0;
+}
+#schedule {
+    vertical-align: middle;
+    padding-left: 8vw;
+}
+#contact {
+    font-size: 36px;
+    font-weight: lighter;
+}
+#contact>h3 {
+    font-size: 40x;
+    font-family: 'EB Garamond';
+    font-weight: 600;
+}
+#copyright {
+    letter-spacing: 3px;
+    margin: 0 5vw 1vh 5vw;
+}
+>>>>>>> 200d03f20803f5ce263000bfecb98d7535fa195c
