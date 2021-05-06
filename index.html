@@ -8,11 +8,16 @@
 
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
     <!-- JS Script -->
     <script src="js/animation.js" async></script>
+    <script src="js/carrousel.js" async></script>
+    <script src="js/jquery3.6.0.min.js" async></script>
 </head>
 <body>
     <div id="strip">
@@ -63,7 +68,9 @@
 
                         <div id="row2Postcard">
                             <div id="col1Postcard">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consectetur eum rerum neque ea odio quibusdam iste est vel aliquid nam sint possimus impedit hic, nostrum, voluptatem similique beatae inventore!</p>
+                                <p>Sorprendete con nuestros platos y disfrutá todo el sazón peruano.
+                                    Inspirados en los sabores, aromas y colores de la tradicional comida peruana. 
+                                    </p>
                             </div>
                             <span id="verticalLine2"></span>
                             <div id="col2Postcard">
@@ -113,10 +120,42 @@
             <div id="stores">
                 <img src="img/stores-frame.png" alt="" id="frame">
                 <div id="textStores">
-                    <span>estamos en</span>
-                    <p>Palermo - 500 Terry Francois Street</p>
-                    <p>Ramos Mejía - 500 Terry Francois Street</p>
-                    <p>Caballito - 500 Terry Francois Street</p>
+                    <div id="carrusel">
+                        <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
+                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
+                        <div class="carrusel">
+                            <div class="product" id="product_0">
+                                <img src="gallery/01.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 1</h5>
+                                <p>165.00 €</p>
+                            </div>
+                            <div class="product" id="product_1">
+                                <img src="gallery/02.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 2</h5>
+                                <p>100.00 €</p>
+                            </div>
+                            <div class="product" id="product_2">
+                                <img src="gallery/03.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 3</h5>
+                                <p>250.00 €</p>
+                            </div>
+                            <div class="product" id="product_3">
+                                <img src="gallery/01.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 4</h5>
+                                <p>75.00 €</p>
+                            </div>
+                            <div class="product" id="product_4">
+                                <img src="gallery/02.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 5</h5>
+                                <p>65.00 €</p>
+                            </div>
+                            <div class="product" id="product_5">
+                                <img src="gallery/03.jpg" width="195" height="100" />
+                                <h5>Lorem ipsum 6</h5>
+                                <p>40.00 €</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

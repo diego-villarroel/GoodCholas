@@ -80,8 +80,7 @@
         position: fixed;
         z-index: 50;
         right: 3vw;
-        top: 37vh;
-        background-color: #f9e5d24f;
+        top: 17vh;
         padding: 10px;
         border-radius: 5px;
     }
@@ -91,12 +90,15 @@
     }
     #fixedBar>ul>li>a {
         display: flex;
-        color: #6C0D1A;
+        color: #F9E5D2;
+        font-family: 'Open Sans';
+        font-weight: 600;
     }
     #fixedBar>ul>li>a:hover {
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
         -webkit-filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.9));
         filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.9));
+        color: #6C0D1A;
     }
     #fixedBar>ul>li>a>span {
         border: 1px solid;
