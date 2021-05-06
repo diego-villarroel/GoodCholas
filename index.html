@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- JS Script -->
     <script src="js/animation.js" async></script>
 </head>
@@ -29,13 +29,21 @@
             </ul>
         </nav>
 
+        <div id="fixedBar">
+            <ul>
+                <li><a href=""><span>PEDIDOS ONLINE</span></a></li>
+                <li><a href=""><img src="/img/GoodCholas-insta.png" alt=""></a></li>
+                <li><a href=""><img src="/img/GoodCholas-facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+
         <div id="textHeader">
-            <h2>Con todo el sabor<br><span id="wow">PERUANO</span></h2>
+            <p>Con todo el sabor<br><span id="wow">PERUANO</span></p>
             <button id="btnOrder">PEDIDOS ONLINE</button>
-        </div>        
+        </div>
     </header>
 
-    <body>
+    <main>
         <section id="postcard">
             <div id="containerPostcard">
                 <div>
@@ -44,8 +52,13 @@
 
                 <div id="textPostcard">
                     <div id="structure">
-                        <div>
-                            <img src="img/GoodCholas-logoabout.png" alt="" id="row1Postcard">
+                        <div id="row1Postcard">
+                            <img src="img/GoodCholas-logoabout.png" alt="" id="logoAbout">
+                            <img src="img/GoodCholas-wave.png" alt="" id="waveLines">
+                        </div>
+
+                        <div >
+                            
                         </div>
 
                         <div id="row2Postcard">
@@ -55,16 +68,13 @@
                             <span id="verticalLine2"></span>
                             <div id="col2Postcard">
                                 <a href="" id="col2Postcard">ver menu</a>
-                            </div>    
-                        </div>                       
-                        
-                    </div>
-                    <div id="waveLines">
-                    </div>
+                            </div>
+                        </div>                        
+                    </div>                    
                 </div>
             </div>
         </section>
-            
+
         <section id="instaFeed">
             <!-- 4 columnas y 2 filas -->
             <div id="gridInsta">
@@ -103,14 +113,14 @@
             <div id="stores">
                 <img src="img/stores-frame.png" alt="" id="frame">
                 <div id="textStores">
-                    <h3>estamos en</h3>
+                    <span>estamos en</span>
                     <p>Palermo - 500 Terry Francois Street</p>
                     <p>Ramos Mejía - 500 Terry Francois Street</p>
                     <p>Caballito - 500 Terry Francois Street</p>
-                </div>                
+                </div>
             </div>
         </section>
-    </body>
+    </main>
 
     <footer>
         <div id="containerFooter" class="gridFooter">
@@ -121,20 +131,20 @@
                     <p>12:00 - 14:00</p>
                     <p>16:00 - 20:00</p>
                 </div>
-    
+
                 <div id="contact">
                     <h3>Delivery & take away</h3>
                     <p>0810 - 220 - 0255</p>
                 </div>
                 <div id="socialNetworks">
-    
+
                 </div>
-            </div>            
+            </div>
             <div id="copyright">
                 <p>GOOD CHOLAS - BIG BRAND GROUP - BUENOS AIRES - ARGENTINA - COPYRIGHT 2020 - ALL RIGHT RESERVED</p>
             </div>
         </div>
-        
+
     </footer>
 </body>
 </html>
