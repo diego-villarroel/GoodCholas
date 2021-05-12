@@ -14,10 +14,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
     <!-- JS Script -->
     <script src="js/animation.js" async></script>
-    <script src="js/carrousel.js" async></script>
-    <script src="js/jquery3.6.0.min.js" async></script>
 </head>
 <body>
     <div id="strip">
@@ -120,42 +121,54 @@
             <div id="stores">
                 <img src="img/stores-frame.png" alt="" id="frame">
                 <div id="textStores">
-                    <div id="carrusel">
-                        <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
-                        <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
-                        <div class="carrusel">
-                            <div class="product" id="product_0">
-                                <img src="gallery/01.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 1</h5>
-                                <p>165.00 €</p>
+                    <span>estamos en</span>
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner d-block w-100">
+                            <div class="carousel-item active">
+                                <p class="d-block w-90">
+                                    VILLA URQUIZA <br>
+                                    Delivery & take away <br>
+                                    Angel Pacheco 2130 - CABA
+                                </p>
                             </div>
-                            <div class="product" id="product_1">
-                                <img src="gallery/02.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 2</h5>
-                                <p>100.00 €</p>
+                            <div class="carousel-item">
+                                <p class="d-block w-90">
+                                    RAMOS MEJÍA <br>
+                                    Delivery & take away <br>
+                                    Av de Mayo 1513 - Ramos Mejía - Buenos Aires
+                                </p>                                
                             </div>
-                            <div class="product" id="product_2">
-                                <img src="gallery/03.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 3</h5>
-                                <p>250.00 €</p>
+                            <div class="carousel-item">
+                                <p class="d-block w-90">
+                                    PALERMO <br>
+                                    Delivery & take away <br>
+                                    Honduras 5869 - CABA
+                                </p>   
                             </div>
-                            <div class="product" id="product_3">
-                                <img src="gallery/01.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 4</h5>
-                                <p>75.00 €</p>
+                            <div class="carousel-item">
+                                <p class="d-block w-90">
+                                    SAN MIGUEL <br>
+                                    Delivery & take away <br>
+                                    Perón 1760 - San Miguel - Buenos Aires
+                                </p>   
                             </div>
-                            <div class="product" id="product_4">
-                                <img src="gallery/02.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 5</h5>
-                                <p>65.00 €</p>
-                            </div>
-                            <div class="product" id="product_5">
-                                <img src="gallery/03.jpg" width="195" height="100" />
-                                <h5>Lorem ipsum 6</h5>
-                                <p>40.00 €</p>
+                            <div class="carousel-item">
+                                <p class="d-block w-90">
+                                    DEL VISO <br>
+                                    Delivery & take away <br>
+                                    Av. Constitución 91 - Del Viso - Buenos Aires
+                                </p>   
                             </div>
                         </div>
-                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </section>
@@ -185,5 +198,6 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

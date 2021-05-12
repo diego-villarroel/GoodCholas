@@ -19,7 +19,7 @@
         font-weight: 600;
     }
     a {
-        text-decoration: none;
+        text-decoration: none !important;
         transition: all 1s ease;
     }
     a:hover {
@@ -34,6 +34,7 @@
         border: none;
         -webkit-filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.7));
+        line-height: 45px !important;
     }
     
     /*  =============================================
@@ -79,8 +80,8 @@
     #fixedBar {
         position: fixed;
         z-index: 50;
-        right: 3vw;
-        top: 17vh;
+        right: 1vw;
+        top: 16vh;
         padding: 10px;
         border-radius: 5px;
     }
@@ -90,6 +91,7 @@
     }
     #fixedBar>ul>li>a {
         display: flex;
+        justify-content: right;
         color: #F9E5D2;
         font-family: 'Open Sans';
         font-weight: 600;
@@ -105,7 +107,8 @@
         padding: 10px;
     }
     #fixedBar>ul>li>a>img {
-        margin: 20px auto;
+        margin: 20px 0 20px 0;
+        padding-right: 15px;
     }
     #textHeader {
         color: #F9E5D2;
@@ -128,7 +131,7 @@
         font-size: 15px;
         background-color: #BB6851;
         color: #F9E5D2;
-        height: 40px;
+        height: 50px;
         width: 170px;
         margin: 0 0 25vh 0;
         transition: all 1s ease;
@@ -271,17 +274,19 @@
     #stores {
         width: 65%;
         margin: 28vh auto 0 auto;
-        padding: 0 0 0 25vw;
+        padding: 0 0 0 15vw;
     }
     #frame {
-        width: 65%;
+        width: 75%;
     }
     #textStores {
-        margin: -38vh 25vw 0 0;
+        height: 200px;
+        width: 400px;;
+        margin: -40vh 0 0 0;
         text-align: center;
         color: #6C0D1A;
-        line-height: 35px;
-        font-size: 13 px;
+        line-height: 25px;
+        font-size: 13px;
         font-family: 'Open Sans', sans-serif;
         font-weight: lighter;
     }
@@ -291,7 +296,15 @@
         font-style: italic;
         margin-bottom: 27px;
     }
-    
+    .carousel-control-next {
+        right: -60px !important;
+    }
+    .carousel-control-prev {
+        left: -60px !important;
+    }
+    #carouselExampleControlsNoTouching {
+        margin-top: 15px;;
+    }
     /*  =============================================
                         FOOTER
         ============================================= */
@@ -314,22 +327,23 @@
     #row1Footer {
         display: grid;
         grid-template-columns: 30% 40% 30%;
-        margin: 8vh 0 8vh 0;
+        margin: 18vh 0 8vh 0;
     }
     #schedule {
         vertical-align: middle;
-        padding-left: 8vw;
+        padding: 15px 0 0 8vw;
+        line-height: 5px;
     }
     #contact {
         font-size: 36px;
         font-weight: lighter;
     }
     #contact>h3 {
-        font-size: 40x;
+        font-size: 40px;
         font-family: 'EB Garamond';
         font-weight: 600;
     }
     #copyright {
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         margin: 0 5vw 1vh 5vw;
     }
