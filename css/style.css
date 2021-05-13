@@ -81,7 +81,7 @@
         position: fixed;
         z-index: 50;
         right: 1vw;
-        top: 16vh;
+        top: 17.5vh;
         padding: 10px;
         border-radius: 5px;
     }
@@ -196,10 +196,20 @@
     #logoAbout {
         margin: 0 auto 0 auto;
     }
-    #waveLines {
+    #wavelines {
         position: absolute;
         right: -2.5vw;
         top: 8vh;
+        clip-path: inset(0 0 0 0);
+    }
+    .animationWavelinesPostcard {        
+        animation-name: waves;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes waves {
+        from {clip-path: inset(0 0 0 100%);}
+        to {clip-path: inset(0 0 0 0);}
     }
     #row2Postcard {
         display: grid;
@@ -281,7 +291,8 @@
     #textStores {
         height: 200px;
         width: 400px;;
-        margin: -40vh 0 0 0;
+        margin: -39vh 0 0 0;
+        padding: 0 0 0 8vw;
         text-align: center;
         color: #6C0D1A;
         line-height: 25px;
@@ -296,10 +307,10 @@
         margin-bottom: 27px;
     }
     .carousel-control-next {
-        right: -60px !important;
+        right: -150px !important;
     }
     .carousel-control-prev {
-        left: -60px !important;
+        left: -160px !important;
     }
     #carouselExampleControlsNoTouching {
         margin-top: 15px;;

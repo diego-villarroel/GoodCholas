@@ -9,9 +9,18 @@ document.addEventListener("scroll", function (e){
 
 document.addEventListener("scroll", function (e){
     let top = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector("#textPostcard").offsetTop;
+        isVisible = top > document.querySelector("#imgPostcard").offsetTop;
 
     if (isVisible) {
         document.getElementById("textPostcard").classList.add("animationTextPostcard");
+    }
+})
+
+document.addEventListener("scroll", function (e){
+    let top = window.pageYOffset + window.innerHeight,
+        isVisible = top > document.querySelector("#imgPostcard").offsetTop;
+
+    if (isVisible) {
+        document.getElementById("wavelines").classList.add("animationWavelinesPostcard");
     }
 })
