@@ -80,10 +80,9 @@
     #fixedBar {
         position: fixed;
         z-index: 50;
-        right: 1vw;
-        top: 17.5vh;
-        padding: 10px;
-        border-radius: 5px;
+        right: 0;
+        top: 0;
+        padding: 0;
     }
     #fixedBar>ul>li {
         display: block;
@@ -224,7 +223,7 @@
     #verticalLine2 {
         border-right: thin solid #6C0D1A;
         margin-left: 1vw;
-        margin-right: 1vw;
+        margin-right: 2vw;
     }
     #col2Postcard {
         padding: 10px 0 0 1vw;
@@ -281,9 +280,9 @@
         height: 120vh;
     }
     #stores {
-        width: 65%;
-        margin: 28vh auto 0 auto;
-        padding: 0 0 0 15vw;
+        width: 850px;
+        margin: 25vh auto 0 auto;
+        padding: 0 0 0 170px;
     }
     #frame {
         width: 75%;
@@ -291,8 +290,8 @@
     #textStores {
         height: 200px;
         width: 400px;;
-        margin: -39vh 0 0 0;
-        padding: 0 0 0 8vw;
+        margin: -225px 0 0 0;
+        padding: 0 0 0 110px;
         text-align: center;
         color: #6C0D1A;
         line-height: 25px;
@@ -307,7 +306,7 @@
         margin-bottom: 27px;
     }
     .carousel-control-next {
-        right: -150px !important;
+        right: -165px !important;
     }
     .carousel-control-prev {
         left: -160px !important;
