@@ -4,6 +4,7 @@
     body, p, h1, h2, h3, h4, ul {
         margin: 0;
         padding: 0;
+        overflow-x: hidden ;
     }
     header {
         background-image: url("../img/photos/Food.jpg");
@@ -147,14 +148,18 @@
     #postcard {
         background-color: #F9E5D2;
         height: 120vh;
+        overflow-x: hidden;
     }
-    #imgPostcard {
+    #imgPostcard1 {
         padding: 22px 17px;
         background-color: #fff;
         height: 100vh;
         margin-top: 10vh;
         margin-left: 12vw;
         position: relative;
+    }
+    #imgPostcard2 {
+        display: none;
     }
     .animationImgPostcard {
         animation-name: imgPostcard;
@@ -355,4 +360,82 @@
     #copyright {
         letter-spacing: 1px;
         margin: 0 5vw 1vh 5vw;
+    }
+    /*  =============================================
+                        MOBILE
+        ============================================= */
+    @media (max-width: 1000px) {
+        nav {
+            display: none;
+        }
+        #strip {
+            display: none;
+        }
+        #fixedBar {
+            display: none;
+        }
+
+        /*  ======================
+            HEADER
+        ======================= */
+        header {
+            background-position: center;
+        }
+        #logo {
+            display: flex;
+            position: relative;
+            margin: 0;
+            top: 10vh;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #textHeader {
+            font-size: 2.5em;
+            line-height: 50px;
+        }
+        #wow {
+            font-size: 1.8em;
+            font-weight: 900;
+        }
+        #btnOrder {
+            height: 40px;
+            line-height: 40px !important;
+        }
+
+        /*  ======================
+            POSTCARD SECTION
+        ======================= */
+        #imgPostcard1 {
+            display: none;
+        }
+        #imgPostcard2 {
+            display: inline-block;
+            position: relative;
+            width: 70vw;
+            margin: 8vh 0 0 10vw;
+
+        }
+
+        /*  ======================
+            IG FEED SECTION
+        ======================= */
+        #gridInsta {
+            margin: 4vh;
+        }
+        #rowInsta {
+            grid-template-columns: auto auto;
+            grid-row-gap: 3vh;
+            grid-column-gap: 10vw;
+        }
+        #instaCol {
+            width: 36vw;
+        }
+
+        /*  ======================
+            STORE SECTION
+        ======================= */
+
+        /*  ======================
+            FOOTER
+        ======================= */
     }
