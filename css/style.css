@@ -117,7 +117,10 @@
         font-style: italic;
         font-size: 49px;
         margin: 35vh 0 0 0;
-        line-height: 90px;
+        line-height: 90px;  
+    }
+    #textHeader>p{
+        overflow: hidden;
     }
     #wow{
         font-family: 'Open Sans', sans-serif;
@@ -148,7 +151,7 @@
     #postcard {
         background-color: #F9E5D2;
         height: 120vh;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     #imgPostcard1 {
         padding: 22px 17px;
@@ -217,6 +220,7 @@
     }
     #row2Postcard {
         display: grid;
+        grid-template-areas: "text line btn";
         grid-template-columns: 45% 10% 45%;
     }
     #col1Postcard {
@@ -242,6 +246,7 @@
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         transition: all .5s ease;
     }
+    
     /*  =============================================
                         IG FEED SECTION
         ============================================= */
@@ -290,7 +295,7 @@
         padding: 0 0 0 170px;
     }
     #frame {
-        width: 75%;
+        width: 500px;
     }
     #textStores {
         height: 200px;
@@ -317,8 +322,9 @@
         left: -160px !important;
     }
     #carouselExampleControlsNoTouching {
-        margin-top: 15px;;
+        margin-top: 15px;
     }
+
     /*  =============================================
                         FOOTER
         ============================================= */
@@ -342,25 +348,38 @@
         display: grid;
         grid-template-columns: 30% 40% 30%;
         margin: 18vh 0 8vh 0;
+        grid-template-areas:    "schedule contact socialNetworks";
     }
     #schedule {
         vertical-align: middle;
         padding: 15px 0 0 8vw;
         line-height: 5px;
+        grid-area: schedule;
+    }
+    #schedule>p {
+        overflow: visible;
     }
     #contact {
         font-size: 36px;
         font-weight: lighter;
+        grid-area: contact;
     }
     #contact>h3 {
         font-size: 40px;
         font-family: 'EB Garamond';
         font-weight: 600;
+        overflow: hidden;
+    }
+    #socialNetworks {
+        text-align: right;
+        padding-right: 8vw;
+        grid-area: socialNetworks;
     }
     #copyright {
         letter-spacing: 1px;
         margin: 0 5vw 1vh 5vw;
     }
+
     /*  =============================================
                         MOBILE
         ============================================= */
@@ -405,6 +424,9 @@
         /*  ======================
             POSTCARD SECTION
         ======================= */
+        #postcard {
+            height: 180vh;
+        }
         #imgPostcard1 {
             display: none;
         }
@@ -413,19 +435,47 @@
             position: relative;
             width: 70vw;
             margin: 8vh 0 0 10vw;
-
+        }
+        #textPostcard {
+            width: 65vw;
+            margin: -95vh 0 0 19vw;
+        }
+        #row2Postcard {
+            grid-template-columns: 100%;
+            grid-template-areas:    "text"
+                                    "line"
+                                    "button";
+        }
+        #col1Postcard {
+            grid-area: text;
+            text-align: justify;
+            padding: 0 10vw 0 10vw;
+            font-size: 17px;
+            line-height: 30px;
+        }
+        #verticalLine2 {
+            border-right: none;
+            border-bottom: thin solid #6C0D1A;
+            margin: 5vh 10vw 0 10vw;
+            grid-area: line;
+        }
+        #col2Postcard {
+            grid-area: button;
+            text-align: center;
         }
 
         /*  ======================
             IG FEED SECTION
         ======================= */
         #gridInsta {
-            margin: 4vh;
+            margin: 30vh 0;
         }
         #rowInsta {
             grid-template-columns: auto auto;
             grid-row-gap: 3vh;
             grid-column-gap: 10vw;
+            margin-left: auto;
+            margin-right: auto;
         }
         #instaCol {
             width: 36vw;
@@ -434,8 +484,56 @@
         /*  ======================
             STORE SECTION
         ======================= */
+        #stores {
+            width: auto;
+            margin: 25vh auto 0 auto;
+            padding: 0;
+        }
+        #frame {
+            width: 320px;
+        }
+        #textStores {
+            width: 300px;;
+            margin: -160px 0 0 0;
+            padding: 0 0 0 30px;
+        }
+        .carousel-control-next {
+            right: -70px !important;
+            bottom: 30px !important;
+        }
+        .carousel-control-prev {
+            left: -80px !important;
+            bottom: 30px !important;
+        }
 
         /*  ======================
             FOOTER
         ======================= */
+        #row1Footer {
+            grid-column: auto;
+            grid-template-columns: 100%;
+            grid-template-areas:    "socialNetworks"
+                                    "contact"
+                                    "schedule";
+            margin: 18vh auto 8vh auto;            
+        }
+        #socialNetworks {
+            text-align: right;
+            padding-right: 0;
+            margin-bottom: 15vh;            
+        }
+        #socialNetworks>a{
+            padding:0 0 0 8vw;
+        }
+        #schedule {
+            vertical-align: middle;
+            padding: 15vh 0 0 0;
+            line-height: 15px;
+            grid-area: schedule;
+            font-size: 20px;
+            text-align: center;
+        }
+        #copyright {
+            line-height: 30px;
+        }
     }
