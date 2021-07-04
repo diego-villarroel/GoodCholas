@@ -18,6 +18,7 @@
         margin: 12vh 15vw 0 0;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
+        z-index: 500;
     }
     a {
         text-decoration: none !important;
@@ -384,7 +385,7 @@
                         MOBILE
         ============================================= */
     @media (max-width: 1000px) {
-        nav {
+        #nav {
             display: none;
         }
         #strip {
@@ -401,7 +402,7 @@
             background-position: center;
         }
         #logo {
-            display: flex;
+            display: block;
             position: relative;
             margin: 0;
             top: 10vh;
@@ -409,8 +410,10 @@
             margin-left: auto;
         }
         #textHeader {
+            position: relative;
             font-size: 2.5em;
             line-height: 50px;
+            margin: 30vh 0 0 0;
         }
         #wow {
             font-size: 1.8em;
@@ -425,7 +428,7 @@
             POSTCARD SECTION
         ======================= */
         #postcard {
-            height: 180vh;
+            height: 100vh;
         }
         #imgPostcard1 {
             display: none;
@@ -433,12 +436,12 @@
         #imgPostcard2 {
             display: inline-block;
             position: relative;
-            width: 70vw;
+            width: 80vw;
             margin: 8vh 0 0 10vw;
         }
         #textPostcard {
             width: 65vw;
-            margin: -95vh 0 0 19vw;
+            margin: -40vh 0 0 19vw;
         }
         #row2Postcard {
             grid-template-columns: 100%;
