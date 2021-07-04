@@ -10,6 +10,7 @@
         background-image: url("../img/photos/Food.jpg");
         background-size: cover;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        overflow-x: hidden ;
     }
     nav {
         text-align: end;
@@ -19,6 +20,7 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         z-index: 500;
+        overflow-x: hidden ;
     }
     a {
         text-decoration: none !important;
@@ -289,14 +291,17 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 120vh;
+        overflow-x: hidden ;
     }
     #stores {
         width: 850px;
         margin: 25vh auto 0 auto;
         padding: 0 0 0 170px;
+        overflow-x: hidden ;
     }
     #frame {
         width: 500px;
+        overflow-x: hidden ;
     }
     #textStores {
         height: 200px;

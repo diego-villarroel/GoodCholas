@@ -18,6 +18,7 @@
     
     -webkit-user-select: none;
     user-select: none;
+    overflow-x: hidden ;
  }
  
  #menuToggle a {
@@ -117,6 +118,7 @@
     left: -110vw;
     padding: 50px;
     padding-top: 125px;
+    overflow-x: hidden ;
    
     background-color: rgba(249, 229, 210, 0.6);
     backdrop-filter: blur(2px);
