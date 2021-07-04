@@ -12,7 +12,7 @@
  #menuToggle {
     display: block;
     position: relative;
-    top: 5vh;
+    top: 10vh;
     left: 80vw;    
     z-index: 1;
     
@@ -22,13 +22,15 @@
  
  #menuToggle a {
     text-decoration: none;
-    color: #232323;
+    color: #6C0D1A;
     
-    transition: color 0.3s ease;
+    transition: 1s ease;
  }
  
  #menuToggle a:hover {
-    color: tomato;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    -webkit-filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.7));
  }
  
  
@@ -58,7 +60,7 @@
     margin-bottom: 5px;
     position: relative;
     
-    background: #cdcdcd;
+    background: #F9E5D2;
     border-radius: 3px;
     
     z-index: 1;
@@ -85,7 +87,7 @@
  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #6C0D1A;
  }
  
  /*
@@ -111,12 +113,13 @@
     position: absolute;
     width: 110vw;
     height: 110vh;
-    margin: -10vh 0 0 20vw;
+    margin: -15vh 0 0 20vw;
     left: -110vw;
     padding: 50px;
     padding-top: 125px;
    
-    background: #ededed;
+    background-color: rgba(249, 229, 210, 0.6);
+    backdrop-filter: blur(2px);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -125,7 +128,7 @@
     transform: translate(100%, 0);
    
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
+ 
  
  #menu li {
     padding: 10px 0;
