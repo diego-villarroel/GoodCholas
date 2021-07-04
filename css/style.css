@@ -394,6 +394,15 @@
         #fixedBar {
             display: none;
         }
+        nav {
+            margin: 0 0 0 0;
+            width: 100vw;
+            float: none;
+            text-align: end;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            z-index: 500;
+        }
 
         /*  ======================
             HEADER
