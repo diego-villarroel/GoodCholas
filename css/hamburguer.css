@@ -11,10 +11,10 @@
  
  #menuToggle {
     display: block;
-    position: relative;
+    position: fixed;
     top: 10vh;
     left: 80vw;    
-    z-index: 1;
+    z-index: 1000;
     
     -webkit-user-select: none;
     user-select: none;
@@ -117,10 +117,9 @@
     left: -110vw;
     padding: 50px;
     padding-top: 125px;
-    overflow-x: hidden ;
    
-    background-color: rgba(249, 229, 210, 0.6);
-    backdrop-filter: blur(2px);
+    background-color: rgba(249, 229, 210, 0.98);
+    /* backdrop-filter: blur(2px); */
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
@@ -133,7 +132,7 @@
  
  
  #menu li {
-    padding: 10px 0;
+    padding: 500px 0 0 0;
     font-size: 22px;
  }
  

@@ -75,6 +75,9 @@
     #nav>ul>li>a:hover{       
         color: #6C0D1A;
     }
+    #mobile-nav {
+        display: none;
+    }
     #logo {
         margin: 10vh 0 0 10vw;
         -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -407,6 +410,11 @@
             font-weight: 600;
             z-index: 500;
         }
+        #mobile-nav {
+            display: contents;
+            position: fixed;            
+            overflow-x: hidden ;
+        }
 
         /*  ======================
             HEADER
@@ -479,6 +487,9 @@
             grid-area: button;
             text-align: center;
         }
+        #wavelines {
+            display: none;
+        }
 
         /*  ======================
             IG FEED SECTION
@@ -501,25 +512,25 @@
             STORE SECTION
         ======================= */
         #stores {
-            width: auto;
-            margin: 25vh auto 0 auto;
-            padding: 0;
+            width: 100vw;
+            margin: 25vh 0 0 0;
+            padding: 0 0 0 14vw;
         }
         #frame {
-            width: 320px;
+            width: 290px;
         }
         #textStores {
-            width: 300px;;
+            width: 280px;;
             margin: -160px 0 0 0;
             padding: 0 0 0 30px;
         }
         .carousel-control-next {
-            right: -70px !important;
-            bottom: 30px !important;
+            right: -45px !important;
+            bottom: 40px !important;
         }
         .carousel-control-prev {
-            left: -80px !important;
-            bottom: 30px !important;
+            left: -65px !important;
+            bottom: 40px !important;
         }
 
         /*  ======================
