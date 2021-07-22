@@ -9,7 +9,7 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carrousel.css">
-    <link rel="stylesheet" href="css/style_mobile.css" media="screen (max-width: 1000px)">
+    <link rel="stylesheet" href="css/style_mobile.css">
     <link rel="stylesheet" href="css/hamburguer.css">
 
     <!-- Google Fonts -->
@@ -23,58 +23,42 @@
     <script src="js/animation.js" async></script>
 </head>
 <body>
+    <!-- RED STRIP -->
     <div id="strip">
         <p><b>DELIVERY & TAKE AWAY CABA - AMBA</b><span id="verticalLine"></span>TODOS LOS DÍAS 10AM - 10PM</p>
     </div>
     <header>
+        <!-- MOBILE NAV -->
         <nav role="navigation" id="mobile-nav">
             <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
                 <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
                 <span></span>
                 <span></span>
                 <span></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
                 <ul id="menu">
-                    <li><a href="">NOSOTROS</a></li>
-                    <li><a href="">SUCURSALES</a></li>
-                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="#postcard">NOSOTROS</a></li>
+                    <li><a href="parallax">SUCURSALES</a></li>
+                    <li><a href="containerFooter">CONTACTO</a></li>
                 </ul>
             </div>
         </nav>
-        
+        <!-- CHAR LOGO -->
         <img src="img/GoodCholas-logo-name.png" alt="nombre" id="logo">          
-
+        <!-- DESKTOP NAV -->
         <nav id="nav">
             <ul>
-                <li><a href="">NOSOTROS</a></li>
-                <li><a href="">SUCURSALES</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li><a href="#postcard">NOSOTROS</a></li>
+                <li><a href="parallax">SUCURSALES</a></li>
+                <li><a href="containerFooter">CONTACTO</a></li>
             </ul>
         </nav>
-
+        <!-- ORDER BUTTON -->
         <div id="fixedBar">
             <ul>
                 <li><a href=""><span>PEDIDOS ONLINE</span></a></li>
-                <li></li>
-                <li></li>
             </ul>
         </div>
-
+        <!-- HEADER - CENTER TEXT -->
         <div id="textHeader">
             <p>Con todo el sabor<br><span id="wow">PERUANO</span></p>
             <button id="btnOrder">PEDIDOS ONLINE</button>
@@ -82,11 +66,11 @@
     </header>
 
     <main>
+        <!-- ABOUT US -->
         <section id="postcard">
             <div id="containerPostcard">
                 <div>
                     <img src="img/photos/Chola.jpg" alt="mujer chola" id="imgPostcard1">
-                    <img src="img/photos/Chola2.png" alt="mujer chola" id="imgPostcard2">
                 </div>
 
                 <div id="textPostcard">
@@ -110,8 +94,19 @@
                     </div>                    
                 </div>
             </div>
+            <div id="mobile-text">
+                <div id="txt">
+                    <p>Sorprendete con nuestros platos y disfrutá todo el sazón peruano.
+                        Inspirados en los sabores, aromas y colores de la tradicional comida peruana. 
+                        </p>
+                </div>
+                <hr>
+                <div id="menu-btn">
+                    <a href="" id="col2Postcard">ver menu</a>
+                </div>
+            </div>
         </section>
-
+        <!-- INSTAGRAM -->
         <section id="instaFeed">
             <!-- 4 columnas y 2 filas -->
             <div id="gridInsta">
@@ -145,7 +140,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- STORE -->
         <section id="parallax">
             <div id="stores">
                 <img src="img/stores-frame.png" alt="" id="frame">
@@ -155,35 +150,35 @@
                         <div class="carousel-inner d-block w-100">
                             <div class="carousel-item active">
                                 <p class="d-block w-90">
-                                    VILLA URQUIZA <br>
+                                    <b>URQUIZA</b><br>
                                     Delivery & take away <br>
                                     Angel Pacheco 2130 - CABA
                                 </p>
                             </div>
                             <div class="carousel-item">
                                 <p class="d-block w-90">
-                                    RAMOS MEJÍA <br>
+                                    <b>RAMOS MEJÍA</b><br>
                                     Delivery & take away <br>
                                     Av de Mayo 1513 - Ramos Mejía - Buenos Aires
                                 </p>                                
                             </div>
                             <div class="carousel-item">
                                 <p class="d-block w-90">
-                                    PALERMO <br>
+                                    <b>PALERMO</b><br>
                                     Delivery & take away <br>
                                     Honduras 5869 - CABA
                                 </p>   
                             </div>
                             <div class="carousel-item">
                                 <p class="d-block w-90">
-                                    SAN MIGUEL <br>
+                                    <b>SAN MIGUEL</b><br>
                                     Delivery & take away <br>
                                     Perón 1760 - San Miguel - Buenos Aires
                                 </p>   
                             </div>
                             <div class="carousel-item">
                                 <p class="d-block w-90">
-                                    DEL VISO <br>
+                                    <b>DEL VISO</b><br>
                                     Delivery & take away <br>
                                     Av. Constitución 91 - Del Viso - Buenos Aires
                                 </p>   
@@ -202,7 +197,7 @@
             </div>
         </section>
     </main>
-
+    <!-- FOOTER -->
     <footer>
         <div id="containerFooter" class="gridFooter">
             <div id="row1Footer">
